@@ -1,42 +1,265 @@
-body {
+/* CSS Variables for Dark Theme */
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --accent-color: #58a6ff;
+    --accent-hover: #3182ce;
+    --border-color: #30363d;
+}
+
+/* Base Styles */
+* {
     margin: 0;
-    background-color: #0d1117;
-    color: #c9d1d9;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  
-  .container {
-    max-width: 700px;
-    margin: 80px auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-  }
-  
-  .subtitle {
-    color: #8b949e;
-    margin-bottom: 40px;
-  }
-  
-  h2 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #58a6ff;
-  }
-  
-  .item {
-    margin-bottom: 10px;
-  }
-  
-  a {
-    color: #c9d1d9;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(13, 17, 23, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
     text-decoration: none;
-  }
-  
-  a:hover {
-    color: #58a6ff;
-  }
+}
+
+nav .logo span {
+    color: var(--accent-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.hero-text {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+/* Typewriter Animation */
+.typewriter {
+    color: var(--accent-color);
+    border-right: 2px solid var(--accent-color);
+    padding-right: 5px;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.social-links a {
+    color: var(--text-main);
+    font-size: 1.8rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.project-desc {
+    margin-bottom: 30px; 
+    color: var(--text-muted);
+}
+
+/* Grid Layouts */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* Cards (Projects & Certificates) */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.card h3 a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.card-meta .fa-star {
+    color: #e3b341;
+}
+
+.language-icon {
+    color: #3572A5;
+    font-size: 0.6rem;
+}
+
+/* Badges / Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.skill-badge {
+    background: rgba(88, 166, 255, 0.1);
+    color: var(--accent-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(88, 166, 255, 0.2);
+}
+
+/* Certificates Specific Adjustments */
+.specialization-card {
+    border-left: 4px solid #f2a900;
+}
+
+.cert-desc {
+    font-size: 0.85rem;
+}
+
+.cert-link {
+    color: var(--accent-color); 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+    margin-top: 10px; 
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background: var(--card-bg);
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 50px;
+}
+
+/* Fade-in Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero h1 { font-size: 2.8rem; }
+    #hero h2 { font-size: 1.5rem; }
+}
