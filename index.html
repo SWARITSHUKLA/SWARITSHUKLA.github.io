@@ -3,303 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swarit Shukla | Machine Learning Portfolio</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Link to external CSS file -->
+    <title>Swarit Shukla</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="#" class="logo">Swarit<span>.dev</span></a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-            </ul>
+    <header>
+        <h1>Swarit Shukla</h1>
+        <div class="links">
+            <a href="https://github.com/SWARITSHUKLA" target="_blank">GitHub</a> /
+            <a href="https://www.linkedin.com/in/swaritshukla/" target="_blank">LinkedIn</a> /
+            <a href="https://www.coursera.org/learner/swaritshukla" target="_blank">Coursera</a>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container fade-in">
-            <h1>Hi, I'm Swarit Shukla</h1>
-            <h2>I am a <span class="typewriter" id="typewriter"></span></h2>
-            <p class="hero-text">
-                I specialize in implementing machine learning algorithms, mathematical concepts, and neural networks from scratch. Always learning, always building.
-            </p>
-            <div class="social-links">
-                <a href="https://github.com/SWARITSHUKLA" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/swaritshukla/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.coursera.org/learner/swaritshukla" target="_blank" title="Coursera"><i class="fas fa-graduation-cap"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About / Skills Section -->
-    <section id="about" class="container fade-in">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-container">
-            <span class="skill-badge">Python</span>
-            <span class="skill-badge">Machine Learning</span>
-            <span class="skill-badge">Deep Learning</span>
-            <span class="skill-badge">Neural Networks</span>
-            <span class="skill-badge">Mathematics for ML</span>
-            <span class="skill-badge">Calculus & Linear Algebra</span>
-            <span class="skill-badge">NumPy</span>
-            <span class="skill-badge">Pandas</span>
-            <span class="skill-badge">Algorithm Design</span>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-        <h2 class="section-title fade-in">Open Source Projects</h2>
-        <p class="fade-in project-desc">
-            A collection of algorithms and models I've implemented entirely from scratch to deeply understand the math behind them.
+    <section id="about">
+        <p>
+            I am a sophomore student studying Computer Science and Engineering with a specialization in AI & ML. My primary interest lies in NLP and NLP with reasoning. I am passionate about building useful applications of AI that people can actually use. 
         </p>
-        
-        <div class="grid">
-            <!-- Project 1 -->
-            <div class="card fade-in">
-                <div>
-                    <h3><a href="https://github.com/SWARITSHUKLA/Anomaly-detection-from-scratch" target="_blank"><i class="fa-solid fa-book-bookmark"></i> Anomaly-detection-from-scratch</a></h3>
-                    <p>Writing an anomaly detection algorithm from scratch using only NumPy and Pandas to find outliers in datasets.</p>
-                </div>
-                <div class="card-meta">
-                    <span><i class="fas fa-star"></i> 4</span>
-                    <span><i class="fas fa-circle language-icon"></i> Python</span>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="card fade-in">
-                <div>
-                    <h3><a href="https://github.com/SWARITSHUKLA/Logistic-regression-from-scratch" target="_blank"><i class="fa-solid fa-book-bookmark"></i> Logistic-regression-from-scratch</a></h3>
-                    <p>Polishing logistic regression knowledge by implementing all the underlying mathematical concepts from scratch.</p>
-                </div>
-                <div class="card-meta">
-                    <span><i class="fas fa-star"></i> 4</span>
-                    <span><i class="fas fa-circle language-icon"></i> Python</span>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="card fade-in">
-                <div>
-                    <h3><a href="https://github.com/SWARITSHUKLA/neural-probabilistic-language-model" target="_blank"><i class="fa-solid fa-book-bookmark"></i> neural-probabilistic-language-model</a></h3>
-                    <p>A character-level implementation of the MLP language model based on the paper 'A Neural Probabilistic Language Model' (Bengio et al., 2003).</p>
-                </div>
-                <div class="card-meta">
-                    <span><i class="fas fa-star"></i> 2</span>
-                    <span><i class="fas fa-circle language-icon"></i> Jupyter Notebook</span>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="card fade-in">
-                <div>
-                    <h3><a href="https://github.com/SWARITSHUKLA/Neural_Network_from_scratch" target="_blank"><i class="fa-solid fa-book-bookmark"></i> Neural_Network_from_scratch</a></h3>
-                    <p>Implementation of a basic neural network model entirely from scratch utilizing NumPy and Pandas.</p>
-                </div>
-                <div class="card-meta">
-                    <span><i class="fas fa-star"></i> 2</span>
-                    <span><i class="fas fa-circle language-icon"></i> Jupyter Notebook</span>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="card fade-in">
-                <div>
-                    <h3><a href="https://github.com/SWARITSHUKLA/Softmax_regression_from_scratch" target="_blank"><i class="fa-solid fa-book-bookmark"></i> Softmax_regression_from_scratch</a></h3>
-                    <p>Implementing categorical cross-entropy and the advanced mathematical concepts behind softmax regression.</p>
-                </div>
-                <div class="card-meta">
-                    <span><i class="fas fa-star"></i> 2</span>
-                    <span><i class="fas fa-circle language-icon"></i> Jupyter Notebook</span>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="card fade-in">
-                <div>
-                    <h3><a href="https://github.com/SWARITSHUKLA/Linear-regression-from-scratch-using-numpy" target="_blank"><i class="fa-solid fa-book-bookmark"></i> Linear-regression-from-scratch</a></h3>
-                    <p>Showcasing how a linear regression model works with all the underlying Mathematics involved.</p>
-                </div>
-                <div class="card-meta">
-                    <span><i class="fas fa-star"></i> 2</span>
-                    <span><i class="fas fa-circle language-icon"></i> Python</span>
-                </div>
-            </div>
-            
-            <!-- Project 7 -->
-            <div class="card fade-in">
-                <div>
-                    <h3><a href="https://github.com/SWARITSHUKLA/Linear-regression-with-stochastic-Gradient-descent-from-scratch-using-numpy" target="_blank"><i class="fa-solid fa-book-bookmark"></i> Stochastic-Gradient-Descent</a></h3>
-                    <p>Using SGD in simple linear regression to calculate gradients using one target at a time instead of full batches.</p>
-                </div>
-                <div class="card-meta">
-                    <span><i class="fas fa-star"></i> 2</span>
-                    <span><i class="fas fa-circle language-icon"></i> Python</span>
-                </div>
-            </div>
-
-            <!-- Project 8 -->
-            <div class="card fade-in">
-                <div>
-                    <h3><a href="https://github.com/SWARITSHUKLA/bigram-language-model" target="_blank"><i class="fa-solid fa-book-bookmark"></i> bigram-language-model</a></h3>
-                    <p>A bigram character-level language model that predicts the next character in a sequence based only on the preceding character.</p>
-                </div>
-                <div class="card-meta">
-                    <span><i class="fas fa-star"></i> 1</span>
-                    <span><i class="fas fa-circle language-icon"></i> Jupyter Notebook</span>
-                </div>
-            </div>
-
-            <!-- Project 9 -->
-            <div class="card fade-in">
-                <div>
-                    <h3><a href="https://github.com/SWARITSHUKLA/Multiple-variable-linear-Regression-from-scratch" target="_blank"><i class="fa-solid fa-book-bookmark"></i> Multiple-variable-linear-Regression</a></h3>
-                    <p>Implementation of linear regression for multi-feature training sets with heavier computations.</p>
-                </div>
-                <div class="card-meta">
-                    <span><i class="fas fa-star"></i> 1</span>
-                    <span><i class="fas fa-circle language-icon"></i> Python</span>
-                </div>
-            </div>
-        </div>
+        <p>
+            I also like to watch cinema. I know it sounds a bit childish, but I aspire to do great things and lead humanity forward lol :)
+        </p>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="container">
-        <h2 class="section-title fade-in">Specializations & Certifications</h2>
-        <div class="grid">
-            
-            <!-- Specialization 1 -->
-            <div class="card fade-in specialization-card">
-                <div>
-                    <h3>Machine Learning Specialization</h3>
-                    <p><strong>DeepLearning.AI</strong> | Completed Sept 2025</p>
-                    <p class="cert-desc">Covered Advanced Learning Algorithms, Supervised Machine Learning, and Unsupervised Learning & Recommenders.</p>
-                </div>
-                <a href="https://www.coursera.org/learner/swaritshukla" target="_blank" class="cert-link">
-                    View Certificate <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-
-            <!-- Specialization 2 -->
-            <div class="card fade-in specialization-card">
-                <div>
-                    <h3>Mathematics for Machine Learning and Data Science Specialization</h3>
-                    <p><strong>DeepLearning.AI</strong> | Completed July 2025</p>
-                    <p class="cert-desc">Mastery in Calculus, Linear Algebra, Probability, and Statistics applied to Machine Learning.</p>
-                </div>
-                <a href="https://www.coursera.org/learner/swaritshukla" target="_blank" class="cert-link">
-                    View Certificate <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-            
-            <!-- Specific Notable Courses -->
-            <div class="card fade-in">
-                <div>
-                    <h3>Structuring Machine Learning Projects</h3>
-                    <p><strong>DeepLearning.AI</strong> | Completed Feb 2026</p>
-                </div>
-                <a href="https://www.coursera.org/learner/swaritshukla" target="_blank" class="cert-link">View <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="card fade-in">
-                <div>
-                    <h3>Improving Deep Neural Networks</h3>
-                    <p><strong>DeepLearning.AI</strong> | Completed Jan 2026</p>
-                    <p class="cert-desc">Hyperparameter Tuning, Regularization, and Optimization.</p>
-                </div>
-                <a href="https://www.coursera.org/learner/swaritshukla" target="_blank" class="cert-link">View <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="card fade-in">
-                <div>
-                    <h3>Neural Networks and Deep Learning</h3>
-                    <p><strong>DeepLearning.AI</strong> | Completed Jan 2026</p>
-                </div>
-                <a href="https://www.coursera.org/learner/swaritshukla" target="_blank" class="cert-link">View <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-        </div>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>A collection of algorithms and models I've implemented from scratch to understand the math behind them.</p>
+        
+        <ul class="item-list">
+            <li>
+                <a href="https://github.com/SWARITSHUKLA/neural-probabilistic-language-model" class="item-title" target="_blank">Neural Probabilistic Language Model</a>
+                <span class="tech-tag">Jupyter Notebook</span>
+                <p>A character-level implementation of the MLP language model based on the paper 'A Neural Probabilistic Language Model' (Bengio et al., 2003).</p>
+            </li>
+            <li>
+                <a href="https://github.com/SWARITSHUKLA/bigram-language-model" class="item-title" target="_blank">Bigram Language Model</a>
+                <span class="tech-tag">Jupyter Notebook</span>
+                <p>A bigram character-level language model that predicts the next character in a sequence based only on the preceding character.</p>
+            </li>
+            <li>
+                <a href="https://github.com/SWARITSHUKLA/Anomaly-detection-from-scratch" class="item-title" target="_blank">Anomaly Detection from Scratch</a>
+                <span class="tech-tag">Python</span>
+                <p>Writing an anomaly detection algorithm from scratch using only NumPy and Pandas to find outliers in datasets.</p>
+            </li>
+            <li>
+                <a href="https://github.com/SWARITSHUKLA/Logistic-regression-from-scratch" class="item-title" target="_blank">Logistic Regression from Scratch</a>
+                <span class="tech-tag">Python</span>
+                <p>Implementing all the underlying mathematical concepts behind logistic regression.</p>
+            </li>
+            <li>
+                <a href="https://github.com/SWARITSHUKLA/Neural_Network_from_scratch" class="item-title" target="_blank">Neural Network from Scratch</a>
+                <span class="tech-tag">Jupyter Notebook</span>
+                <p>Implementation of a basic neural network model entirely from scratch utilizing NumPy and Pandas.</p>
+            </li>
+            <li>
+                <a href="https://github.com/SWARITSHUKLA/Softmax_regression_from_scratch" class="item-title" target="_blank">Softmax Regression from Scratch</a>
+                <span class="tech-tag">Jupyter Notebook</span>
+                <p>Implementing categorical cross-entropy and the advanced mathematical concepts behind softmax regression.</p>
+            </li>
+            <li>
+                <a href="https://github.com/SWARITSHUKLA/Linear-regression-from-scratch-using-numpy" class="item-title" target="_blank">Linear Regression from Scratch</a>
+                <span class="tech-tag">Python</span>
+                <p>Showcasing how a linear regression model works with all the underlying mathematics involved.</p>
+            </li>
+            <li>
+                <a href="https://github.com/SWARITSHUKLA/Linear-regression-with-stochastic-Gradient-descent-from-scratch-using-numpy" class="item-title" target="_blank">Stochastic Gradient Descent</a>
+                <span class="tech-tag">Python</span>
+                <p>Using SGD in simple linear regression to calculate gradients using one target at a time instead of full batches.</p>
+            </li>
+            <li>
+                <a href="https://github.com/SWARITSHUKLA/Multiple-variable-linear-Regression-from-scratch" class="item-title" target="_blank">Multiple Variable Linear Regression</a>
+                <span class="tech-tag">Python</span>
+                <p>Implementation of linear regression for multi-feature training sets.</p>
+            </li>
+        </ul>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Swarit Shukla. Built with HTML, CSS & JavaScript.</p>
-        </div>
-    </footer>
+    <section id="certificates">
+        <h2>Specializations & Courses</h2>
+        <ul class="item-list">
+            <li>
+                <span class="item-title">Machine Learning Specialization</span> — DeepLearning.AI
+                <p>Covered Advanced Learning Algorithms, Supervised Machine Learning, and Unsupervised Learning & Recommenders. <a href="https://www.coursera.org/learner/swaritshukla" target="_blank">[Certificate]</a></p>
+            </li>
+            <li>
+                <span class="item-title">Mathematics for Machine Learning and Data Science</span> — DeepLearning.AI
+                <p>Mastery in Calculus, Linear Algebra, Probability, and Statistics applied to Machine Learning. <a href="https://www.coursera.org/learner/swaritshukla" target="_blank">[Certificate]</a></p>
+            </li>
+            <li>
+                <span class="item-title">Structuring Machine Learning Projects</span> — DeepLearning.AI <a href="https://www.coursera.org/learner/swaritshukla" target="_blank">[Certificate]</a>
+            </li>
+            <li>
+                <span class="item-title">Improving Deep Neural Networks</span> — DeepLearning.AI
+                <p>Hyperparameter Tuning, Regularization, and Optimization. <a href="https://www.coursera.org/learner/swaritshukla" target="_blank">[Certificate]</a></p>
+            </li>
+            <li>
+                <span class="item-title">Neural Networks and Deep Learning</span> — DeepLearning.AI <a href="https://www.coursera.org/learner/swaritshukla" target="_blank">[Certificate]</a>
+            </li>
+        </ul>
+    </section>
 
-    <!-- JAVASCRIPT -->
-    <script>
-        // 1. Typewriter Effect
-        const words = ["Machine Learning Enthusiast", "Deep Learning Practitioner", "Algorithm Developer"];
-        let i = 0;
-        let isDeleting = false;
-        let currentWord = "";
-        let charIndex = 0;
-
-        function typeEffect() {
-            currentWord = words[i];
-            
-            if (isDeleting) {
-                charIndex--;
-            } else {
-                charIndex++;
-            }
-
-            document.getElementById("typewriter").textContent = currentWord.substring(0, charIndex);
-
-            let typingSpeed = isDeleting ? 50 : 100;
-
-            if (!isDeleting && charIndex === currentWord.length) {
-                typingSpeed = 2000; // Pause at end of word
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                i = (i + 1) % words.length; // Move to next word
-                typingSpeed = 500; // Pause before typing next word
-            }
-
-            setTimeout(typeEffect, typingSpeed);
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            setTimeout(typeEffect, 1000); // Start effect after 1 second
-        });
-
-        // 2. Scroll Fade-In Animation Observer
-        const fadeElements = document.querySelectorAll('.fade-in');
-        
-        const appearOptions = {
-            threshold: 0.15,
-            rootMargin: "0px 0px -50px 0px"
-        };
-
-        const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    return;
-                } else {
-                    entry.target.classList.add('show');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, appearOptions);
-
-        fadeElements.forEach(el => {
-            appearOnScroll.observe(el);
-        });
-    </script>
 </body>
 </html>

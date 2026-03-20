@@ -1,265 +1,98 @@
-/* CSS Variables for Dark Theme */
-:root {
-    --bg-color: #0d1117;
-    --card-bg: #161b22;
-    --text-main: #c9d1d9;
-    --text-muted: #8b949e;
-    --accent-color: #58a6ff;
-    --accent-hover: #3182ce;
-    --border-color: #30363d;
-}
-
-/* Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+/* Minimalist, Academic Design Inspired by Karpathy.ai */
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #222222;
+    background-color: #ffffff;
     line-height: 1.6;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
+    max-width: 750px;
+    margin: 50px auto;
     padding: 0 20px;
+    font-size: 16px;
 }
 
-/* Navbar */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(13, 17, 23, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
-    z-index: 1000;
-    padding: 15px 0;
-}
-
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-main);
-    text-decoration: none;
-}
-
-nav .logo span {
-    color: var(--accent-color);
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: var(--text-main);
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: var(--accent-color);
-}
-
-/* Hero Section */
-#hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 60px;
-}
-
-#hero h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-#hero h2 {
-    font-size: 2rem;
-    color: var(--text-muted);
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-
-.hero-text {
-    color: var(--text-muted);
-    max-width: 600px;
-    margin-bottom: 25px;
-}
-
-/* Typewriter Animation */
-.typewriter {
-    color: var(--accent-color);
-    border-right: 2px solid var(--accent-color);
-    padding-right: 5px;
-    animation: blink 0.75s step-end infinite;
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
-.social-links a {
-    color: var(--text-main);
-    font-size: 1.8rem;
-    margin-right: 15px;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: var(--accent-color);
-}
-
-/* Section Styling */
-section {
-    padding: 80px 0;
-}
-
-.section-title {
+h1 {
     font-size: 2.2rem;
-    margin-bottom: 40px;
-    color: #ffffff;
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 10px;
-    display: inline-block;
+    margin-bottom: 0.2em;
+    font-weight: 600;
+    color: #000000;
 }
 
-.project-desc {
-    margin-bottom: 30px; 
-    color: var(--text-muted);
+h2 {
+    font-size: 1.4rem;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    font-weight: 600;
+    color: #000000;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 5px;
 }
 
-/* Grid Layouts */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-}
-
-/* Cards (Projects & Certificates) */
-.card {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 25px;
-    transition: transform 0.3s, border-color 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-color);
-}
-
-.card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-}
-
-.card h3 a {
-    color: var(--accent-color);
+a {
+    color: #0366d6;
     text-decoration: none;
 }
 
-.card p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 20px;
+a:hover {
+    text-decoration: underline;
 }
 
-.card-meta {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-}
-
-.card-meta .fa-star {
-    color: #e3b341;
-}
-
-.language-icon {
-    color: #3572A5;
-    font-size: 0.6rem;
-}
-
-/* Badges / Skills */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
+.links {
+    margin-bottom: 2em;
     font-size: 1.1rem;
+    color: #666666;
 }
 
-.skill-badge {
-    background: rgba(88, 166, 255, 0.1);
-    color: var(--accent-color);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    border: 1px solid rgba(88, 166, 255, 0.2);
+.links a {
+    margin: 0 5px;
+}
+.links a:first-child {
+    margin-left: 0;
 }
 
-/* Certificates Specific Adjustments */
-.specialization-card {
-    border-left: 4px solid #f2a900;
+p {
+    margin-bottom: 1.2em;
 }
 
-.cert-desc {
-    font-size: 0.85rem;
+/* Lists for Projects and Courses */
+.item-list {
+    list-style-type: none;
+    padding: 0;
 }
 
-.cert-link {
-    color: var(--accent-color); 
-    text-decoration: none; 
-    font-size: 0.9rem; 
-    margin-top: 10px; 
-    display: inline-block;
+.item-list li {
+    margin-bottom: 1.5em;
 }
 
-/* Footer */
-footer {
-    background: var(--card-bg);
-    text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid var(--border-color);
-    margin-top: 50px;
+.item-list p {
+    margin: 0.3em 0 0 0;
+    color: #444444;
+    font-size: 0.95rem;
 }
 
-/* Fade-in Animation Classes */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.item-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000000;
 }
 
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
+.tech-tag {
+    font-family: monospace;
+    font-size: 0.8rem;
+    background-color: #f1f3f5;
+    color: #495057;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #hero h1 { font-size: 2.8rem; }
-    #hero h2 { font-size: 1.5rem; }
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    body {
+        margin: 30px auto;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
 }
