@@ -1,57 +1,63 @@
-/* Minimalist, Academic Design Inspired by Karpathy.ai */
+/* Minimalist, Aesthetic Design with Elegant Fonts */
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #222222;
-    background-color: #ffffff;
-    line-height: 1.6;
-    max-width: 750px;
-    margin: 50px auto;
+    /* Changed to Lora: an aesthetic, highly readable serif font */
+    font-family: 'Lora', Georgia, serif;
+    color: #2c2c2c; /* Slightly softer black for easier reading */
+    background-color: #faf9f7; /* Very subtle off-white paper background */
+    line-height: 1.7; /* Extra breathing room between lines */
+    max-width: 720px;
+    margin: 60px auto;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 18px; /* Slightly larger base size for elegance */
 }
 
 h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.2em;
-    font-weight: 600;
-    color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 0.1em;
+    font-weight: 500;
+    color: #111111;
+    letter-spacing: -0.5px; /* Makes large text look tighter and cleaner */
 }
 
 h2 {
-    font-size: 1.4rem;
-    margin-top: 2em;
+    font-size: 1.5rem;
+    margin-top: 2.2em;
     margin-bottom: 0.8em;
-    font-weight: 600;
-    color: #000000;
-    border-bottom: 1px solid #eeeeee;
-    padding-bottom: 5px;
+    font-weight: 500;
+    color: #111111;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
 }
 
 a {
-    color: #0366d6;
+    color: #1a56db; /* A slightly softer, more aesthetic blue */
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 a:hover {
+    color: #111111;
     text-decoration: underline;
 }
 
 .links {
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
     font-size: 1.1rem;
     color: #666666;
+    font-style: italic; /* Adds a nice touch to the top links */
 }
 
 .links a {
     margin: 0 5px;
+    font-style: normal;
 }
 .links a:first-child {
     margin-left: 0;
 }
 
 p {
-    margin-bottom: 1.2em;
+    margin-bottom: 1.4em;
 }
 
 /* Lists for Projects and Courses */
@@ -61,38 +67,41 @@ p {
 }
 
 .item-list li {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.8em;
 }
 
 .item-list p {
-    margin: 0.3em 0 0 0;
-    color: #444444;
-    font-size: 0.95rem;
+    margin: 0.4em 0 0 0;
+    color: #4b4b4b;
+    font-size: 1rem;
 }
 
 .item-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    color: #000000;
+    color: #111111;
 }
 
 .tech-tag {
-    font-family: monospace;
-    font-size: 0.8rem;
-    background-color: #f1f3f5;
-    color: #495057;
-    padding: 2px 6px;
+    /* Using a highly aesthetic developer font here */
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    background-color: #f0f0f0;
+    color: #555555;
+    padding: 3px 8px;
     border-radius: 4px;
-    margin-left: 8px;
+    margin-left: 10px;
     vertical-align: middle;
+    border: 1px solid #e4e4e4;
 }
 
 /* Mobile adjustments */
 @media (max-width: 600px) {
     body {
-        margin: 30px auto;
+        margin: 40px auto;
+        font-size: 17px;
     }
     h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 }
