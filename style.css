@@ -161,14 +161,20 @@ p {
 
 /* Mobile Adjustments */
 @media (max-width: 850px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
     .sidebar {
         position: relative;
         width: 100%;
         height: auto;
         padding: 40px 20px;
+        order: 2;
     }
     .main-content {
         margin-left: 0;
         padding: 40px 20px;
+        order: 1;
     }
 }
