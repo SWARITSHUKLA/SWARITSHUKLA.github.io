@@ -60,7 +60,16 @@ body {
 }
 
 .sidebar-nav li {
-    margin-bottom: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav li + li {
+    margin-top: 4px;
+}
+
+.sidebar-nav li.sidebar-nav-external {
+    margin-top: 14px;
 }
 
 .sidebar-nav a {
@@ -84,6 +93,12 @@ body {
     background-color: #262626; 
     color: #ffffff;
     font-weight: 500;
+}
+
+/* Mailto row: same box model as other .sidebar-nav a; long address wraps cleanly */
+.sidebar-email a {
+    word-break: break-all;
+    hyphens: none;
 }
 
 /* =========================================
