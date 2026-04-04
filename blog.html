@@ -1,0 +1,20 @@
+---
+layout: default
+title: Blog
+---
+
+<section id="blog-page" style="padding-top: 2rem;">
+    <h1>Blog</h1>
+    <p>Thoughts and writings.</p>
+    <ul class="item-list">
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}" class="item-title">{{ post.title }}</a>
+            <p style="color: #8892b0; font-family: 'Fira Code', monospace; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
+                {{ post.date | date: "%B %-d, %Y" }}
+            </p>
+            <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

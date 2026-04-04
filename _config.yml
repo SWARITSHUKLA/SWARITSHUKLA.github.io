@@ -1,0 +1,7 @@
+title: Swarit Shukla
+description: AI enthusiast building machine learning systems from scratch
+url: "https://swaritshukla.me"
+
+# Exclude files from being built
+exclude:
+  - README.md

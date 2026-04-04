@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description"
+        content="Swarit Shukla is an AI enthusiast building machine learning projects from scratch, focused on NLP and real-world AI applications.">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Swarit Shukla",
+  "url": "https://swaritshukla.me",
+  "sameAs": [
+    "https://github.com/SWARITSHUKLA",
+    "https://www.linkedin.com/in/swaritshukla/"
+  ],
+  "jobTitle": "AI Developer",
+  "description": "AI enthusiast building machine learning systems from scratch"
+}
+</script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Swarit Shukla",
+  "url": "https://swaritshukla.me"
+}
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Swarit Shukla</title>
+
+    <!-- Importing the aesthetic fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+
+<body>
+
+    <!-- The Dark Sidebar -->
+    <!-- IF YOU SEE THE COMMENTS AND THINK HUH GOT HIM ITS AI GENERATED MY GUY I AINT A WEB DEV PLUS ITS BASIC HTML CSS I DONT WANT TO WASTE MY TIME AND IF YOU ARE INTERESETED THEN LET ME TELL YOU I USED GEMINI 3.1 PRO TO MAKE THIS BASIC SITE, PEACE :)  -->
+    <nav class="sidebar">
+        <div class="profile">
+            <!-- Replace the src link below with your own profile picture URL -->
+            <img src="{{ '/79589043.jpeg' | relative_url }}" alt="Profile Picture" class="profile-img">
+            <!-- <h1 class="sidebar-name">Swarit Shukla</h1> -->
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="/#about" class="nav-link active">about</a></li>
+            <li><a href="/#projects" class="nav-link">projects</a></li>
+            <li><a href="/#certificates" class="nav-link">certificates</a></li>
+            <li><a href="/blog.html" class="nav-link">blog</a></li>
+            <li class="sidebar-email"><a href="mailto:ai@swaritshukla.me">ai@swaritshukla.me</a></li>
+            <li class="sidebar-nav-external"><a href="https://github.com/SWARITSHUKLA" target="_blank">github</a></li>
+            <li><a href="https://www.linkedin.com/in/swaritshukla/" target="_blank">linkedin</a></li>
+            <li><a href="https://www.coursera.org/learner/swaritshukla" target="_blank">coursera</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    <!-- Tiny script just to move the highlighted active box in the sidebar when you click -->
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
