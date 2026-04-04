@@ -15,7 +15,7 @@ I did it because I am **gritty**. I don’t care if things are hard, if it’s g
 
 The fact is, the situation doesn’t matter; it’s how you respond in that situation.
 
-# Catastrophe Blooms
+## Catastrophe Blooms
 
 You read above that you should take action given any situation, **but what if you take action and you lose again and again?** There will be a point in time when all you will have is a collection of failures to your name. How can you not be devastated? How can you not be overwhelmed?
 
@@ -68,4 +68,5 @@ At the end, what I want to say is that being gritty—it will hurt. You will fee
 You are all you have got. You have absolute control over yourself. You are the most precious thing you own, so be gentle sometimes. Talk to yourself and tell yourself that you are doing good. Things don’t need to happen right now—let them take their time.
 
 And smile more.
+
 — Swarit Shukla
