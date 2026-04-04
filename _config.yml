@@ -5,3 +5,6 @@ url: "https://swaritshukla.me"
 # Exclude files from being built
 exclude:
   - README.md
+
+future: true
+timezone: Asia/Kolkata
