@@ -8,3 +8,6 @@ exclude:
 
 future: true
 timezone: Asia/Kolkata
+
+plugins:
+  - jekyll-sitemap
