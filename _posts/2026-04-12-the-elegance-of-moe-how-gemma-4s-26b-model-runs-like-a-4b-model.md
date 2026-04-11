@@ -4,7 +4,7 @@ title: "The Elegance of MoE: How Gemma 4's 26B Model Runs Like a 4B Model"
 date: 2026-04-12
 ---
 
-
+![Gemma 4 Architecture Outline](/photos/gemma-4_Title%20image.webp)
 Google recently dropped its new family of open-source AI models, **Gemma 4**, but the variant that truly captured my interest is **Gemma-4-26B-A4B-IT**. The question is: how can a 26 billion parameter model only activate 4 billion parameters at a time? This is where the elegance lies. By only activating 4 billion parameters, it reduces the cost of compute a lot. So what’s the magic behind this? It turns out it uses a clever architecture called MoE (Mixture of Experts) that lets the model choose experts, and hence it only activates 4 billion parameters, making it extremely fast and compute-efficient.
 
 A Mixture of Experts model is not a giant monolith. Internally, it is divided into experts (for example, 128). Experts specialize in different fields like coding, physics, calculus, and literature. So instead of using a giant neural network, it uses smaller expert neural networks. Note that these experts are not predefined—the neural network learns this itself during backpropagation.
@@ -16,6 +16,8 @@ Traditional dense models differ from Mixture of Experts. In a dense model, each 
 MoE uses a router that assigns a token to only the **top k** experts (usually 2 or 8). The router (which is a neural network) takes in the token as input and then computes probabilities for all the experts. The top two with the highest probability are assigned that token.
 
 So at a time, only four billion parameters are activated, and the remaining 22 billion sit idle.
+
+![Gemma 4 Benchmarks](/photos/gemma-4-benchmarks.jpg)
 
 ## The restaurant analogy
 
@@ -69,4 +71,3 @@ The modern implementation of this idea came in 2017. The paper, titled _"Outrage
 ----------
 
 **by Swarit Shukla**
-
