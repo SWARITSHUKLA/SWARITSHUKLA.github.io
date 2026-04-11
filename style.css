@@ -185,11 +185,11 @@ p {
         width: 100%;
         height: auto;
         padding: 40px 20px;
-        order: 2;
+        order: 1;
     }
     .main-content {
         margin-left: 0;
         padding: 40px 20px;
-        order: 1;
+        order: 2;
     }
 }
