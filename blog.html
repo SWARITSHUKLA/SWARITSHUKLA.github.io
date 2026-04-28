@@ -7,10 +7,16 @@ title: Blog
     <h1>Blog</h1>
     <p>Vent for the chaos within</p>
 
+    <!-- Tabbed Navigation Menu -->
+    <div class="blog-tabs" style="display: flex; gap: 20px; border-bottom: 1px solid #ddd; margin-top: 2rem; margin-bottom: 2rem;">
+        <button class="tab-btn active" onclick="showCategory('cat-ai', this)" style="background: none; border: none; font-size: 1.1rem; cursor: pointer; padding: 10px 0; font-family: inherit; font-weight: 600; color: inherit; opacity: 1; border-bottom: 2px solid currentColor;">AI Hype</button>
+        <button class="tab-btn" onclick="showCategory('cat-deep', this)" style="background: none; border: none; font-size: 1.1rem; cursor: pointer; padding: 10px 0; font-family: inherit; font-weight: 600; color: inherit; opacity: 0.5; border-bottom: 2px solid transparent;">Deep AI</button>
+        <button class="tab-btn" onclick="showCategory('cat-life', this)" style="background: none; border: none; font-size: 1.1rem; cursor: pointer; padding: 10px 0; font-family: inherit; font-weight: 600; color: inherit; opacity: 0.5; border-bottom: 2px solid transparent;">Life</button>
+    </div>
+
     <!-- Category 1: AI Hype -->
-    <div style="margin-top: 3rem;">
-        <h2 style="margin-top: 0; padding-bottom: 0px; border-bottom: none;">AI Hype</h2>
-        <p style="color: #666; margin-top: 0;">What's big in the world of AI.</p>
+    <div id="cat-ai" class="category-block" style="display: block;">
+        <p style="color: #666; margin-top: 0; margin-bottom: 1.5rem;">What's big in the world of AI.</p>
         <ul class="item-list">
             {% for post in site.posts %}
             {% if post.category == 'ai-hype' %}
@@ -27,9 +33,8 @@ title: Blog
     </div>
 
     <!-- Category 2: Deep AI -->
-    <div style="margin-top: 3rem;">
-        <h2 style="margin-top: 0; padding-bottom: 0px; border-bottom: none;">Deep AI</h2>
-        <p style="color: #666; margin-top: 0;">Technical blogs that require deep knowledge.</p>
+    <div id="cat-deep" class="category-block" style="display: none;">
+        <p style="color: #666; margin-top: 0; margin-bottom: 1.5rem;">Technical blogs that require deep knowledge.</p>
         <ul class="item-list">
             {% for post in site.posts %}
             {% if post.category == 'deep-ai' %}
@@ -46,9 +51,8 @@ title: Blog
     </div>
 
     <!-- Category 3: Life -->
-    <div style="margin-top: 3rem;">
-        <h2 style="margin-top: 0; padding-bottom: 0px; border-bottom: none;">Life</h2>
-        <p style="color: #666; margin-top: 0;">General life things and how I do stuff.</p>
+    <div id="cat-life" class="category-block" style="display: none;">
+        <p style="color: #666; margin-top: 0; margin-bottom: 1.5rem;">General life things and how I do stuff.</p>
         <ul class="item-list">
             {% for post in site.posts %}
             {% if post.category == 'life' %}
@@ -65,3 +69,23 @@ title: Blog
     </div>
 
 </section>
+
+<!-- Script logic to swap tabs without reloading or scrolling the page -->
+<script>
+    function showCategory(categoryId, btnElement) {
+        // Hide all blocks
+        document.querySelectorAll('.category-block').forEach(el => el.style.display = 'none');
+        // Show target block
+        document.getElementById(categoryId).style.display = 'block';
+
+        // Reset all buttons style visually
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.style.opacity = '0.5';
+            btn.style.borderBottomColor = 'transparent';
+        });
+
+        // Highlight active button
+        btnElement.style.opacity = '1';
+        btnElement.style.borderBottomColor = 'currentColor';
+    }
+</script>
