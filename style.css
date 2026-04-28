@@ -106,8 +106,8 @@ body {
    ========================================= */
 .main-content {
     margin-left: 280px; /* Offset to make room for sidebar */
-    max-width: 800px;
-    padding: 60px 50px;
+    max-width: 1200px;
+    padding: 60px 80px; /* Increased right padding for breathing room */
 }
 
 h2 {
