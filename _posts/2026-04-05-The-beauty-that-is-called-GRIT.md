@@ -2,6 +2,7 @@
 layout: post
 title: "The beauty that is called GRIT"
 date: 2026-04-05
+category: life
 ---
 
 
