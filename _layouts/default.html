@@ -65,7 +65,7 @@
         </div>
 
         <ul class="sidebar-nav">
-            <li><a href="/#about" class="nav-link active">about</a></li>
+            <li><a href="/#about" class="nav-link">about</a></li>
             <li><a href="/#projects" class="nav-link">projects</a></li>
             <li><a href="/#certificates" class="nav-link">certificates</a></li>
             <li><a href="/blog.html" class="nav-link">blog</a></li>
@@ -81,9 +81,39 @@
         {{ content }}
     </main>
 
-    <!-- Tiny script just to move the highlighted active box in the sidebar when you click -->
+    <!-- Smart script to automatically highlight the correct box in the sidebar based on URL -->
     <script>
         const links = document.querySelectorAll('.nav-link');
+        
+        function updateActiveNav() {
+            let path = window.location.pathname;
+            let hash = window.location.hash;
+            
+            links.forEach(l => l.classList.remove('active'));
+            
+            // Check if user is on blog.html or viewing an individual blog post
+            if (path.includes('blog') || path.match(/\/\d{4}\/\d{2}\/\d{2}\//)) {
+                let blogLink = document.querySelector('.nav-link[href="/blog.html"]');
+                if (blogLink) blogLink.classList.add('active');
+            } else {
+                // If on the home page, select based on section hash
+                if (hash) {
+                    let target = document.querySelector('.nav-link[href="/' + hash + '"]');
+                    if (target) {
+                        target.classList.add('active');
+                    } else {
+                        let defaultLink = document.querySelector('.nav-link[href="/#about"]');
+                        if (defaultLink) defaultLink.classList.add('active');
+                    }
+                } else {
+                    let defaultLink = document.querySelector('.nav-link[href="/#about"]');
+                    if (defaultLink) defaultLink.classList.add('active');
+                }
+            }
+        }
+        
+        updateActiveNav();
+        
         links.forEach(link => {
             link.addEventListener('click', function () {
                 links.forEach(l => l.classList.remove('active'));
