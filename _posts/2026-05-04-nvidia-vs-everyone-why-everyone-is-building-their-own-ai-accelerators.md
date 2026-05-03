@@ -5,7 +5,7 @@ date: 2026-05-04
 category: ai-hype
 ---
 
-There has been a race in the AI industry where companies are now preferring their own custom accelerators to train AI models and generate inference from them. But why? Why all of a sudden is everyone ditching Nvidia and either building their own accelerators or just buying from the ones that make them? For example, Anthropic uses Google's TPUs (Tensor Processing Units), Amazon is offering their own Trainium chips, and OpenAI is hinting at making their own custom accelerators. The answer is fairly simple, and it's not because they don't want Nvidia to dominate over the market; it's because their accelerator chips are faster than those Nvidia GPUs. So, let's discuss this in detail.
+There has been a race in the AI industry to generate custom AI accelerators, companies are now preferring their own custom accelerators to train AI models and generate inference from them. But why? Why all of a sudden is everyone ditching Nvidia and either building their own accelerators or just buying from the ones that make them? For example, Anthropic uses Google's TPUs (Tensor Processing Units), Amazon is offering their own Trainium chips, and OpenAI is hinting at making their own custom accelerators. The answer is fairly simple, and it's not because they don't want Nvidia to dominate over the market; it's because their accelerator chips are faster than those Nvidia GPUs. So, let's discuss this in detail.
 
 ![Jensen Nvidia vs everyone photo](/photos/jensen_Nvidia%20%20vs%20everyone%20photo.webp)
 
