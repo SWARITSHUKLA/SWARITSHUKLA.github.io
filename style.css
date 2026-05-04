@@ -111,13 +111,12 @@ body {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 2.2em;
     margin-bottom: 0.8em;
-    font-weight: 600;
+    font-weight: 700;
     color: #111111;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 8px;
+    text-transform: lowercase;
 }
 
 /* Removes top margin from the very first section so it aligns cleanly */
@@ -151,15 +150,17 @@ p {
 }
 
 .item-list p {
-    margin: 0.4em 0 0 0;
-    color: #4b4b4b;
-    font-size: 1rem;
+    margin: 0.2em 0 0 0;
+    color: #666666;
+    font-size: 0.95rem;
+    text-transform: lowercase;
 }
 
 .item-title {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 700;
     color: #111111;
+    text-transform: lowercase;
 }
 
 .tech-tag {
