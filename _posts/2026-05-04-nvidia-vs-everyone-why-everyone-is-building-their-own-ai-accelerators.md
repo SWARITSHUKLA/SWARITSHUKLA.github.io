@@ -63,7 +63,7 @@ Jensen, while on the podcast with Dwarkesh Patel, gave a very good analogy. He s
 
 Here is the most important point: the bottleneck is not the chip, it's the network. Modern AI models are not trained and run using a single chip; they are trained and run on multiple chips working together. So it doesn't matter if your chip is super fast because most of the time it will be sitting idle and waiting for the data to arrive. Nvidia recognized this bottleneck a long time ago and acquired Mellanox, a company that builds high-speed networking. Nvidia builds NVLink switches and InfiniBand networking fabrics that connect them.
 
-***I would encourage you to think of Nvidia not as a chip design company but as a "DATA CENTER MAKING COMPANY".***
+I would encourage you to think of Nvidia not as a chip design company but as a "DATACENTER MAKING COMPANY".
 
 ## Why isn't Nvidia making ASIC chips?
 So here is the real question: if NVIDIA can design the best chips and has got the best networks, then why aren't they making ASIC chips themselves? 
