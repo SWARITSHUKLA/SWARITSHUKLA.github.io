@@ -15,15 +15,22 @@ body {
 }
 
 /* =========================================
-   TOP NAVIGATION (Minimalist)
+   TOP NAVIGATION (Liquid Glass)
    ========================================= */
-.top-nav {
+   .top-nav {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid #1a1a1a;
+    /* Liquid Glass properties */
+    background: rgba(10, 10, 10, 0.45); /* Very transparent dark base */
+    backdrop-filter: blur(20px) saturate(180%); /* The magic blur and color boost */
+    -webkit-backdrop-filter: blur(20px) saturate(180%); /* Safari support */
+    
+    /* Glass edges and depth */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Faint light edge at bottom */
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.1), /* Subtle drop shadow */
+        inset 0 1px 0 rgba(255, 255, 255, 0.05); /* Faint highlight at top */
     z-index: 100;
 }
 
@@ -53,7 +60,7 @@ body {
 .nav-links a {
     font-family: 'Fira Code', monospace;
     font-size: 0.85rem;
-    color: #a1a1aa;
+    color: #d1d5db; /* Slightly brighter so it's readable through the glass */
     text-decoration: none;
     transition: color 0.2s ease;
 }
