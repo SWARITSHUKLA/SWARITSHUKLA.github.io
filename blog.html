@@ -3,28 +3,24 @@ layout: default
 title: Blog
 ---
 
-<section id="blog-page" style="padding-top: 2rem;">
+<section id="blog-page" class="blog-container">
     <h1>Blog</h1>
-    <p>Vent for the chaos within</p>
+    <p class="blog-subtitle">Vent for the chaos within</p>
 
-    <!-- Tabbed Navigation Menu -->
-    <div class="blog-tabs" style="display: flex; gap: 20px; border-bottom: 1px solid #ddd; margin-top: 2rem; margin-bottom: 2rem;">
-        <button class="tab-btn active" onclick="showCategory('cat-ai', this)" style="background: none; border: none; font-size: 1.1rem; cursor: pointer; padding: 10px 0; font-family: inherit; font-weight: 600; color: inherit; opacity: 1; border-bottom: 2px solid currentColor;">AI Hype</button>
-        <button class="tab-btn" onclick="showCategory('cat-deep', this)" style="background: none; border: none; font-size: 1.1rem; cursor: pointer; padding: 10px 0; font-family: inherit; font-weight: 600; color: inherit; opacity: 0.5; border-bottom: 2px solid transparent;">Deep AI</button>
-        <button class="tab-btn" onclick="showCategory('cat-life', this)" style="background: none; border: none; font-size: 1.1rem; cursor: pointer; padding: 10px 0; font-family: inherit; font-weight: 600; color: inherit; opacity: 0.5; border-bottom: 2px solid transparent;">Life</button>
+    <div class="blog-tabs">
+        <button class="tab-btn active" onclick="showCategory('cat-ai', this)">AI Hype</button>
+        <button class="tab-btn" onclick="showCategory('cat-deep', this)">Deep AI</button>
+        <button class="tab-btn" onclick="showCategory('cat-life', this)">Life</button>
     </div>
 
-    <!-- Category 1: AI Hype -->
     <div id="cat-ai" class="category-block" style="display: block;">
-        <p style="color: #666; margin-top: 0; margin-bottom: 1.5rem;">What's big in the world of AI.</p>
+        <p class="category-desc">What's big in the world of AI.</p>
         <ul class="item-list">
             {% for post in site.posts %}
             {% if post.category == 'ai-hype' %}
             <li>
                 <a href="{{ post.url | relative_url }}" class="item-title">{{ post.title }}</a>
-                <p style="color: #8892b0; font-family: 'Fira Code', monospace; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
-                    {{ post.date | date: "%B %-d, %Y" }}
-                </p>
+                <p class="post-date-inline">{{ post.date | date: "%B %-d, %Y" }}</p>
                 <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
             </li>
             {% endif %}
@@ -32,17 +28,14 @@ title: Blog
         </ul>
     </div>
 
-    <!-- Category 2: Deep AI -->
     <div id="cat-deep" class="category-block" style="display: none;">
-        <p style="color: #666; margin-top: 0; margin-bottom: 1.5rem;">Technical blogs that require deep knowledge.</p>
+        <p class="category-desc">Technical blogs that require deep knowledge.</p>
         <ul class="item-list">
             {% for post in site.posts %}
             {% if post.category == 'deep-ai' %}
             <li>
                 <a href="{{ post.url | relative_url }}" class="item-title">{{ post.title }}</a>
-                <p style="color: #8892b0; font-family: 'Fira Code', monospace; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
-                    {{ post.date | date: "%B %-d, %Y" }}
-                </p>
+                <p class="post-date-inline">{{ post.date | date: "%B %-d, %Y" }}</p>
                 <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
             </li>
             {% endif %}
@@ -50,42 +43,31 @@ title: Blog
         </ul>
     </div>
 
-    <!-- Category 3: Life -->
     <div id="cat-life" class="category-block" style="display: none;">
-        <p style="color: #666; margin-top: 0; margin-bottom: 1.5rem;">General life things and how I do stuff.</p>
+        <p class="category-desc">General life things and how I do stuff.</p>
         <ul class="item-list">
             {% for post in site.posts %}
             {% if post.category == 'life' %}
             <li>
                 <a href="{{ post.url | relative_url }}" class="item-title">{{ post.title }}</a>
-                <p style="color: #8892b0; font-family: 'Fira Code', monospace; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
-                    {{ post.date | date: "%B %-d, %Y" }}
-                </p>
+                <p class="post-date-inline">{{ post.date | date: "%B %-d, %Y" }}</p>
                 <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
             </li>
             {% endif %}
             {% endfor %}
         </ul>
     </div>
-
 </section>
 
-<!-- Script logic to swap tabs without reloading or scrolling the page -->
 <script>
     function showCategory(categoryId, btnElement) {
-        // Hide all blocks
         document.querySelectorAll('.category-block').forEach(el => el.style.display = 'none');
-        // Show target block
         document.getElementById(categoryId).style.display = 'block';
 
-        // Reset all buttons style visually
         document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.style.opacity = '0.5';
-            btn.style.borderBottomColor = 'transparent';
+            btn.classList.remove('active');
         });
 
-        // Highlight active button
-        btnElement.style.opacity = '1';
-        btnElement.style.borderBottomColor = 'currentColor';
+        btnElement.classList.add('active');
     }
 </script>
