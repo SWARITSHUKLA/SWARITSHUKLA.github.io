@@ -261,3 +261,54 @@ p {
         padding: 2rem 1.5rem;
     }
 }
+/* =========================================
+   PREMIUM MICRO-INTERACTIONS & POLISH
+   ========================================= */
+
+/* 1. Highlighted Keywords in Text */
+.highlight {
+    color: #ffffff; /* Makes keywords bright white instead of gray */
+    font-weight: 500;
+}
+
+/* 2. Custom Text Selection Color */
+::selection {
+    background: #64ffda;
+    color: #0a0a0a; /* Dark text on green highlight */
+}
+
+/* 3. Premium List Hover Effect (Applies to Projects AND Courses) */
+.item-list li {
+    position: relative;
+    transition: background-color 0.2s ease;
+    padding: 1.5rem 1rem; /* Add side padding for the hover box */
+    margin-left: -1rem;  /* Pull back so it aligns with the h2 above it */
+    margin-right: -1rem;
+    border-radius: 6px;
+}
+
+.item-list li:hover {
+    background-color: #111111; /* Very subtle light gray box on hover */
+}
+
+/* Make the arrow appear next to titles on hover */
+.item-title::after {
+    content: ' →';
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    color: #64ffda;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateX(-5px);
+    display: inline-block;
+}
+
+.item-list li:hover .item-title::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 4. Smooth transition for all links */
+a, .item-title {
+    transition: color 0.2s ease-in-out;
+}
