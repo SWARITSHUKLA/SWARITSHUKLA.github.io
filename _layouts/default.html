@@ -54,6 +54,7 @@
 </head>
 
 <body>
+    <div class="chiaroscuro-bg"></div>
     <style>
         .chiaroscuro-bg {
             position: fixed;
@@ -61,11 +62,13 @@
             left: -25%;
             width: 150%;
             height: 150%;
-            z-index: -2;
-            pointer-events: none;
-            background: radial-gradient(circle at 30% 40%, rgba(190, 150, 90, 0.05), transparent 50%),
-                        radial-gradient(circle at 70% 60%, rgba(120, 90, 160, 0.03), transparent 60%);
-            animation: drift-light 30s infinite alternate ease-in-out;
+            z-index: -1; /* Keeps it behind your main content */
+            pointer-events: none; /* Lets clicks pass through to your links */
+            /* Significantly increased opacity so it is actually visible */
+            background: radial-gradient(circle at 30% 30%, rgba(200, 150, 80, 0.25), transparent 60%),
+                        radial-gradient(circle at 70% 70%, rgba(100, 80, 140, 0.15), transparent 70%);
+            /* 15s for noticeable but subtle movement */
+            animation: drift-light 10s infinite alternate ease-in-out;
         }
         
         @keyframes drift-light {
@@ -79,7 +82,6 @@
             background-color: #0a0a0a;
         }
     </style>
-    <div class="chiaroscuro-bg"></div>
 
     <!-- Minimal Top Navigation -->
     <header class="top-nav">
