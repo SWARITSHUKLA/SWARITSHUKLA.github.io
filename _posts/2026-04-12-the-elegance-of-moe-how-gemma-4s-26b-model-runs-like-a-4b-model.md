@@ -72,4 +72,4 @@ The modern implementation of this idea came in 2017. The paper, titled _"Outrage
 
 ----------
 
-**by Swarit Shukla**
+**by Swarit Shukla**  
