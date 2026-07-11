@@ -2,7 +2,7 @@
 layout: post
 title: "How to Deal with Evil Irrationality"
 date: 2026-07-11
-categories: life
+category: life
 ---
 How to Deal with Evil/Irrationality
 ===================================

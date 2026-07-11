@@ -16,7 +16,7 @@ file_content = f"""---
 layout: post
 title: "{title}"
 date: {date}
-categories: {category}
+category: {category}
 ---
 Write here!!
 """
