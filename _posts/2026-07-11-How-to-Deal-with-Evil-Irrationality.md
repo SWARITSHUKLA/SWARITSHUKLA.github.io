@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "How to Deal with Evil Irrationality"
+title: "How to Deal with Evil/Irrationality"
 date: 2026-07-11
 category: life
 ---
-How to Deal with Evil/Irrationality
-===================================
 
 For the past few days or weeks, I haven't been in a really good mental shape. Let me tell you how it started. I was scrolling YouTube maybe a month ago, and I saw a thumbnail of a website that had gore content in it. I really couldn't think of anything; I just went to the site and watched one or two videos out of curiosity. But while watching those videos, I mentally fucked myself up, which is really bad. Then, I decided to stop watching it and went back to trying to do my own stuff that I had going on.
 
