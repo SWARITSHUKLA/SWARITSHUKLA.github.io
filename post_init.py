@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 
 date = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%d")
 title = input("Enter the title of the post: ")
-modified_title =  date + " " +title.replace(" ", "-")
+modified_title =  date + "-" +title.replace(" ", "-")
 
 print(modified_title)
 category = ['ai-hype', "deep-ai", 'life']
