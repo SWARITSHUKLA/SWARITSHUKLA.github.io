@@ -51,7 +51,8 @@ What we have here is the latency plot, we are essentially plotting all the value
 ![equation 4](/photos/Batch%20Size%20and%20LLM%20Inference%20Efficiency/graph%201.1.jpeg)
 - $t_{compute}$ grows linearly as the batch size increases
 - $t_{kv-fetch }$ also grows linear. 
-- $t_{weight-fetch }$ dosent grow at all it remains constant
+- $t_{weight-fetch}$ dosent grow at all it remains constant
+
 ---
 
     plot 1.2 
@@ -59,11 +60,14 @@ What we have here is the latency plot, we are essentially plotting all the value
  ![equation 4](/photos/Batch%20Size%20and%20LLM%20Inference%20Efficiency/graph%201.2.jpeg)
  - plotting the conjuntion of both $t_{weight-fetch }$  & $t_{kv-fetch }$ as $t_{memory}$
  - notice that the y intercept of $t_{memory}$ starts exactly from the  $t_{weight-fetch }$ intercept
+
 ---
+
     plot 1.3
  ![equation 4](/photos/Batch%20Size%20and%20LLM%20Inference%20Efficiency/graph%201.3.jpeg)
  - Here we are taking the maximum of $t_{compute}$ & $t_{memory}$
- - Now this graph tells us, How latency grows with the increase in batch size 
+ - Now this graph tells us, How latency grows with the increase in batch size.
+ - The point worth noting here is that there is a lower bound on latency, because the time it takes to load the model parameters is a constant
  
 
 
