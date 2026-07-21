@@ -63,7 +63,7 @@ What we have here is the latency plot, we are essentially plotting all the value
     plot 1.3
  ![equation 4](/photos/Batch%20Size%20and%20LLM%20Inference%20Efficiency/graph%201.3.jpeg)
  - Here we are taking the maximum of $t_{compute}$ & $t_{memory}$
- - Now this graph tels us about 
+ - Now this graph tells us, How latency grows with the increase in batch size 
  
 
 

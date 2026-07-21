@@ -320,3 +320,25 @@ p {
 a, .item-title {
     transition: color 0.2s ease-in-out;
 }
+
+/* =========================================
+   MATHJAX / LATEX MATH STYLING
+   ========================================= */
+/* Ensure MathJax SVG output matches the site's color scheme */
+mjx-container {
+    color: #F5F0E1 !important; /* Warm Ivory to match headings */
+}
+
+/* Display math ($$...$$) gets subtle padding and centering */
+mjx-container[display="true"] {
+    display: block !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.8em 0;
+    margin: 0.5em 0;
+}
+
+/* Inline math keeps flow but matches text color */
+mjx-container:not([display="true"]) {
+    color: #c4bdb1 !important; /* Match surrounding body text */
+}
