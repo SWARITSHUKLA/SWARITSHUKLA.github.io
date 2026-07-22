@@ -8,7 +8,7 @@ Having an optimal Batch size can decrease your models cost per token at the time
 
 This will be an explanation on how Batch size effects the cost at the inference, We will be going deep and building the framework from the ground up. this will be an informal explanation of the concept so dont expect any formal language. 
 
-> The word plot and grpah are used interchangebly in this Article so dont get confused
+> The word plot and graph are used interchangebly in this Article so dont get confused
 
 Shall we begin this journey my square. 
 
@@ -114,6 +114,6 @@ The Graph 2.1 plots (***t/B***) as a function of (***B***), and the variables ch
 - There is a lower bound on cost too which is $t_{compute}$.
 - Here is a caveat, As you increaase the batch size, at some point $t_{kv-fetch }$ will surpass $t_{compute}$ and at that point compute is no longer the lower bound its memory bandwidth and the MFU (model flop utilization) decreases significantly, So the cost/token increases if the batach size is too big 
 
-Thanks for the read 
+Thanks for the read :)
 
 I wrote this article becasue its the most pedagogically effective way for me to understand this topic explained by Reiner Pope on [Dwarkesh patel](https://www.youtube.com/watch?v=xmkSf5IS-zw&t=160)
