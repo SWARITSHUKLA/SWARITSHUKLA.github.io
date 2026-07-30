@@ -6,7 +6,7 @@ category: life
 ---
 
 starting with something intimate here is the photo of myselves when i was lik 3-4, i mean look in those eyes, somehow it makes me wanna cry, it feels so like idk gutting thinking that this small inoccent eyed child will has to go through a lots of bad things in his life 
-![cute me](/photos/Things%20are%20changing%20so%20fast%20that%20i%20dont%20know%20who%20i%20am/Cute%20me.png)
+<img src="/photos/Things%20are%20changing%20so%20fast%20that%20i%20dont%20know%20who%20i%20am/Cute%20me.png" alt="cute me" style="max-width: 80%; display: block; margin: 20px auto; border-radius: 6px;">
 Let me think: it was probably 2024 when I woke up, not like the way you wake up in the morning, but like awakening. I don't know what caused it. When I think of my life from 2004 till now, I don't know any instance before 2024 when I felt awakened or had any sort of control.
 
 I was just reacting; nothing else. There was no proactiveness; I didn't decide anything. There was no reasoning involved. 
