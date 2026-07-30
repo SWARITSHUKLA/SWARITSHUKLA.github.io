@@ -39,3 +39,4 @@ Sanjuro was the sequel to Yojimbo, but here's the catch: Sanjuro doesn't build u
 An unknown ronin helps a group of naive samurai to fight against the corruption inflicted by the superintendent who has captured the chamberlain and his wife.
 
 ## Rashomon - 1950
+Rashomon was not the kind of movie i was expecting it to be its only 87 minutes long 
