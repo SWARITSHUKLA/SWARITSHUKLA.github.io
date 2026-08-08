@@ -8,7 +8,7 @@ category: life
 <div style="text-align: center;">
   <img src="/photos/I%20am%20a%20plant%20parent%20now%21%21/jiva2.jpeg" alt="Jiva1" style="max-width: 50%; height: auto; border-radius: 8px;">
 </div>
-I bought a Jade plant day before yesterday a day before yesterday (6 august 2026), well if you know anything about me then you can tell it was not a planned decision it was out of my whims, i odnt know what triggered that thought, i was just looking for some room decor online (tapestries and posters), then i thought of buying a plant and guess what i bought it i looked for a plant to buy and i saw a jade plant i also wanted to buy a bamboo too but it wasnt the the type of plant that grow in soil it needed water so i asked my friend and i was like ok lets get a a jade plant. 
+I bought a Jade plant day before yesterday a day before yesterday (6 august 2026), well if you know anything about me then you can tell it was not a planned decision it was out of my whims, i don't know what triggered that thought, i was just looking for some room decor online (tapestries and posters), then i thought of buying a plant and guess what i bought it i looked for a plant to buy and i saw a jade plant i also wanted to buy a bamboo too but it wasnt the the type of plant that grow in soil it needed water so i asked my friend and i was like ok lets get a a jade plant. 
 
 She arrived almost instantly (yeah, I'm calling her she), and there she was, my baby jade plant. She was so small; I mean, still is, but she's so cute it feels fatherly. I want to take care of her.
 
