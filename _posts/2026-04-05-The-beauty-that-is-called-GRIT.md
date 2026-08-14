@@ -71,3 +71,10 @@ You are all you have got. You have absolute control over yourself. You are the m
 And smile more.
 
 — Swarit Shukla
+
+---
+
+<div class="spotify-embed">
+  <p class="spotify-label">🎧 a song for this read</p>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0FZd4IaxB12sUTKSUUGwWq?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
