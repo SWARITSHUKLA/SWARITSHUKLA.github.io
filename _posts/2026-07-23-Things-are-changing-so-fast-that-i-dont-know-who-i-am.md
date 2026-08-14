@@ -7,7 +7,7 @@ category: life
 
 Starting with something intimate here is the photo of myselves when i was like 3-4, i mean look in those eyes, somehow it makes me wanna cry, it feels idk gutting thinking that this small inoccent eyed child will have to go through a lot of bad things in his life 
 <div style="text-align: center;">
-  <img src="/photos/Things%20are%20changing%20so%20fast%20that%20i%20dont%20know%20who%20i%20am/Cute%20me.png" alt="Jiva1" style="max-width: 50%; height: auto; border-radius: 8px;">
+  <img src="/photos/Things%20are%20changing%20so%20fast%20that%20i%20dont%20know%20who%20i%20am/Cute%20me.png" alt="Cute me" style="max-width: 50%; height: auto; border-radius: 8px;">
 </div>
 
 Let me think: it was probably 2024 when I woke up, not like the way you wake up in the morning, but like awakening. I don't know what caused it. When I think of my life from 2004 till now, I don't know any instance before 2024 when I felt awakened or had any sort of control.
@@ -59,3 +59,9 @@ I'mmoving back to college in a few days, and I had this feeling again, so I deci
 Also, this is the most real that I can be; I might seem different in person, but it's me in the purest form. I'm sorry if the sentence formation feels janky and grammar seems incorrect; I intend to keep this as raw as possible, lmao :)
 
 might refine it later as i read it again and again.
+
+---
+
+<div class="spotify-embed">
+  <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/in/album/kaha-tak/1674972913?i=1674973226&theme=dark"></iframe>
+</div>
