@@ -397,15 +397,6 @@ mjx-container:not([display="true"]) {
     -webkit-backdrop-filter: blur(12px);
 }
 
-.spotify-label {
-    font-family: 'Fira Code', monospace;
-    font-size: 0.8rem;
-    color: #64ffda;
-    letter-spacing: 0.05em;
-    margin: 0 0 1rem 0;
-    opacity: 0.85;
-}
-
 .spotify-embed iframe {
     border-radius: 12px;
     display: block;

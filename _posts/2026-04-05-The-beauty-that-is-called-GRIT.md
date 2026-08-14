@@ -75,6 +75,5 @@ And smile more.
 ---
 
 <div class="spotify-embed">
-  <p class="spotify-label">🎧 a song for this read</p>
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0FZd4IaxB12sUTKSUUGwWq?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/in/album/storm-ii/1890018474?i=1890018672"></iframe>
 </div>
