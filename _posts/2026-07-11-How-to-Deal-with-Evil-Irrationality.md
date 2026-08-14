@@ -50,3 +50,9 @@ I didnt wanted this incident to happen to me, but well it happened and i learned
 it feels light after sharing this
 
 ~ Swarit Shukla
+
+---
+
+<div class="spotify-embed">
+  <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/in/album/its-called-freefall/1332144279?i=1332144496&theme=dark"></iframe>
+</div>
