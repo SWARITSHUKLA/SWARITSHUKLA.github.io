@@ -18,4 +18,10 @@ Here is a childhood story about my connection with plants, I was very small i do
 
 My life has changed a bit after Jiva, She is a responsibility and i have to take care of her she has to see son for 4-5 hours a day and the flat where i am at the sun is availible for like first few hours in the morning so i have to get up early and place her in the balcony because if you wake up late then she will not get enough sun and i dont want that, if you ask me well then why not just keep her outside 24 hours?, The answer is it's rainy season here in India, and Jade plants can be harmed if you give them too much water. So keeping her outside is a gamble that I'm not willing to risk at all.
 
-She has made my life better; even a thought of her comforts me. When I think there is a literal living being that I am attached to, it makes me feel happy, and this connection is not shallow; there is no cunningness, deception, or motives involved when I am sitting on the balcony with her; it's just a pure, beautiful bond between two living beings. 
+She has made my life better; even a thought of her comforts me. When I think there is a literal living being that I am attached to, it makes me feel happy, and this connection is not shallow; there is no cunningness, deception, or motives involved when I am sitting on the balcony with her; it's just a pure, beautiful bond between two living beings.
+
+---
+
+<div class="spotify-embed">
+  <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/in/album/pran/1642495544?i=1642496368&theme=dark"></iframe>
+</div> 
