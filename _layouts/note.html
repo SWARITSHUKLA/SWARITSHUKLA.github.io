@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<section class="blog-post note-detail">
+  <div class="back-link">
+    <a href="/notes.html">← Back to Notes</a>
+  </div>
+  <h1>{{ page.title }}</h1>
+  <div class="note-meta">
+    <span class="post-date-inline">{{ page.date | date: "%B %-d, %Y" }}</span>
+    {% if page.category %}
+    <span class="tech-tag">{{ page.category }}</span>
+    {% endif %}
+  </div>
+
+  {% if page.description %}
+  <p class="note-description">{{ page.description }}</p>
+  {% endif %}
+
+  {% if page.pdf %}
+  <div class="pdf-toolbar">
+    <a href="{{ page.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="pdf-btn primary">Open in New Tab ↗</a>
+    <a href="{{ page.pdf | relative_url }}" download class="pdf-btn secondary">Download PDF ↓</a>
+  </div>
+
+  <div class="pdf-viewer-container">
+    <object data="{{ page.pdf | relative_url }}" type="application/pdf" class="pdf-frame">
+      <iframe src="{{ page.pdf | relative_url }}" class="pdf-frame">
+        <p class="pdf-fallback">
+          Your browser does not support embedded PDFs. 
+          <a href="{{ page.pdf | relative_url }}" target="_blank">Click here to view or download the PDF</a>.
+        </p>
+      </iframe>
+    </object>
+  </div>
+  {% endif %}
+
+  <div class="post-content note-additional-content">
+    {{ content }}
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DigitalDocument",
+    "name": "{{ page.title | escape }}",
+    "url": "https://swaritshukla.me{{ page.url | relative_url }}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}",
+    "author": {
+      "@type": "Person",
+      "name": "Swarit Shukla",
+      "url": "https://swaritshukla.me"
+    }
+  }
+  </script>
+</section>

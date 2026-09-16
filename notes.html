@@ -1,0 +1,188 @@
+---
+layout: default
+title: Notes
+---
+
+<section id="notes-page" class="blog-container">
+    <h1>Notes</h1>
+    <p class="blog-subtitle">Handwritten notes, mathematical derivations & visual summaries</p>
+
+    <div class="blog-tabs">
+        <button class="tab-btn active" onclick="showCategory('cat-all', this)">All</button>
+        <button class="tab-btn" onclick="showCategory('cat-dl', this)">Deep Learning</button>
+        <button class="tab-btn" onclick="showCategory('cat-ml', this)">Machine Learning</button>
+        <button class="tab-btn" onclick="showCategory('cat-math', this)">Mathematics</button>
+        <button class="tab-btn" onclick="showCategory('cat-systems', this)">Systems</button>
+    </div>
+
+    <!-- All Notes -->
+    <div id="cat-all" class="category-block" style="display: block;">
+        <p class="category-desc">All handwritten notes across AI, mathematics, and systems.</p>
+        {% assign all_notes = site.notes | sort: 'date' | reverse %}
+        {% if all_notes.size > 0 %}
+        <ul class="item-list">
+            {% for note in all_notes %}
+            <li>
+                <div class="note-header-row">
+                    <a href="{{ note.url | relative_url }}" class="item-title">{{ note.title }}</a>
+                    {% if note.pdf %}
+                    <a href="{{ note.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="pdf-pill-link">PDF ↗</a>
+                    {% endif %}
+                </div>
+                <p class="post-date-inline">
+                    {{ note.date | date: "%B %-d, %Y" }}
+                    {% if note.category %}
+                    <span class="tech-tag">{{ note.category }}</span>
+                    {% endif %}
+                </p>
+                {% if note.description %}
+                <p>{{ note.description }}</p>
+                {% elsif note.excerpt %}
+                <p>{{ note.excerpt | strip_html | truncatewords: 22 }}</p>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-category-msg">Notes will be uploaded here soon.</p>
+        {% endif %}
+    </div>
+
+    <!-- Deep Learning -->
+    <div id="cat-dl" class="category-block" style="display: none;">
+        <p class="category-desc">Neural architectures, backpropagation, attention, and representation learning.</p>
+        {% assign dl_notes = site.notes | where: "category", "deep-learning" | sort: 'date' | reverse %}
+        {% if dl_notes.size > 0 %}
+        <ul class="item-list">
+            {% for note in dl_notes %}
+            <li>
+                <div class="note-header-row">
+                    <a href="{{ note.url | relative_url }}" class="item-title">{{ note.title }}</a>
+                    {% if note.pdf %}
+                    <a href="{{ note.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="pdf-pill-link">PDF ↗</a>
+                    {% endif %}
+                </div>
+                <p class="post-date-inline">
+                    {{ note.date | date: "%B %-d, %Y" }}
+                    <span class="tech-tag">deep-learning</span>
+                </p>
+                {% if note.description %}
+                <p>{{ note.description }}</p>
+                {% elsif note.excerpt %}
+                <p>{{ note.excerpt | strip_html | truncatewords: 22 }}</p>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-category-msg">No deep learning notes uploaded yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Machine Learning -->
+    <div id="cat-ml" class="category-block" style="display: none;">
+        <p class="category-desc">Classical ML, optimization algorithms, probabilistic models, and loss functions.</p>
+        {% assign ml_notes = site.notes | where: "category", "machine-learning" | sort: 'date' | reverse %}
+        {% if ml_notes.size > 0 %}
+        <ul class="item-list">
+            {% for note in ml_notes %}
+            <li>
+                <div class="note-header-row">
+                    <a href="{{ note.url | relative_url }}" class="item-title">{{ note.title }}</a>
+                    {% if note.pdf %}
+                    <a href="{{ note.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="pdf-pill-link">PDF ↗</a>
+                    {% endif %}
+                </div>
+                <p class="post-date-inline">
+                    {{ note.date | date: "%B %-d, %Y" }}
+                    <span class="tech-tag">machine-learning</span>
+                </p>
+                {% if note.description %}
+                <p>{{ note.description }}</p>
+                {% elsif note.excerpt %}
+                <p>{{ note.excerpt | strip_html | truncatewords: 22 }}</p>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-category-msg">No machine learning notes uploaded yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Mathematics -->
+    <div id="cat-math" class="category-block" style="display: none;">
+        <p class="category-desc">Linear algebra, multivariable calculus, probability, and statistics for ML.</p>
+        {% assign math_notes = site.notes | where: "category", "mathematics" | sort: 'date' | reverse %}
+        {% if math_notes.size > 0 %}
+        <ul class="item-list">
+            {% for note in math_notes %}
+            <li>
+                <div class="note-header-row">
+                    <a href="{{ note.url | relative_url }}" class="item-title">{{ note.title }}</a>
+                    {% if note.pdf %}
+                    <a href="{{ note.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="pdf-pill-link">PDF ↗</a>
+                    {% endif %}
+                </div>
+                <p class="post-date-inline">
+                    {{ note.date | date: "%B %-d, %Y" }}
+                    <span class="tech-tag">mathematics</span>
+                </p>
+                {% if note.description %}
+                <p>{{ note.description }}</p>
+                {% elsif note.excerpt %}
+                <p>{{ note.excerpt | strip_html | truncatewords: 22 }}</p>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-category-msg">No mathematics notes uploaded yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Systems -->
+    <div id="cat-systems" class="category-block" style="display: none;">
+        <p class="category-desc">Inference serving, memory bandwidth, hardware accelerators, and GPU execution.</p>
+        {% assign sys_notes = site.notes | where: "category", "systems" | sort: 'date' | reverse %}
+        {% if sys_notes.size > 0 %}
+        <ul class="item-list">
+            {% for note in sys_notes %}
+            <li>
+                <div class="note-header-row">
+                    <a href="{{ note.url | relative_url }}" class="item-title">{{ note.title }}</a>
+                    {% if note.pdf %}
+                    <a href="{{ note.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="pdf-pill-link">PDF ↗</a>
+                    {% endif %}
+                </div>
+                <p class="post-date-inline">
+                    {{ note.date | date: "%B %-d, %Y" }}
+                    <span class="tech-tag">systems</span>
+                </p>
+                {% if note.description %}
+                <p>{{ note.description }}</p>
+                {% elsif note.excerpt %}
+                <p>{{ note.excerpt | strip_html | truncatewords: 22 }}</p>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-category-msg">No systems notes uploaded yet.</p>
+        {% endif %}
+    </div>
+</section>
+
+<script>
+    function showCategory(categoryId, btnElement) {
+        document.querySelectorAll('.category-block').forEach(el => el.style.display = 'none');
+        var target = document.getElementById(categoryId);
+        if (target) target.style.display = 'block';
+
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        btnElement.classList.add('active');
+    }
+</script>

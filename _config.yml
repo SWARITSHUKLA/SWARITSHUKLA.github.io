@@ -11,3 +11,8 @@ timezone: Asia/Kolkata
 
 plugins:
   - jekyll-sitemap
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title/
