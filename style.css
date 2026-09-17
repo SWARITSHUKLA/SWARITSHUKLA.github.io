@@ -281,6 +281,25 @@ pre code {
     border-bottom: 2px solid #64ffda;
 }
 
+/* The notes categories stay on one row and can be swiped on narrow screens. */
+.notes-tabs {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+}
+
+.notes-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.notes-tabs .tab-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    scroll-snap-align: start;
+}
+
 .category-desc {
     color: #857F78; /* Muted warm gray */
     margin-top: 0;
@@ -309,6 +328,11 @@ pre code {
     }
     .main-content {
         padding: 2rem 1.5rem;
+    }
+    .notes-tabs {
+        gap: 1.25rem;
+        margin-right: -1.5rem;
+        padding-right: 1.5rem;
     }
 }
 

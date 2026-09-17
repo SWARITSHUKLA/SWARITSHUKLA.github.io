@@ -7,12 +7,12 @@ title: Notes
     <h1>Notes</h1>
     <p class="blog-subtitle">Handwritten notes, mathematical derivations & visual summaries</p>
 
-    <div class="blog-tabs">
-        <button class="tab-btn active" onclick="showCategory('cat-all', this)">All</button>
-        <button class="tab-btn" onclick="showCategory('cat-dl', this)">Deep Learning</button>
-        <button class="tab-btn" onclick="showCategory('cat-ml', this)">Machine Learning</button>
-        <button class="tab-btn" onclick="showCategory('cat-math', this)">Mathematics</button>
-        <button class="tab-btn" onclick="showCategory('cat-systems', this)">Systems</button>
+    <div class="blog-tabs notes-tabs" role="tablist" aria-label="Note categories">
+        <button type="button" class="tab-btn active" role="tab" aria-selected="true" aria-controls="cat-all" onclick="showCategory('cat-all', this)">All</button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-dl" onclick="showCategory('cat-dl', this)">Deep Learning</button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-ml" onclick="showCategory('cat-ml', this)">Machine Learning</button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-math" onclick="showCategory('cat-math', this)">Mathematics</button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-systems" onclick="showCategory('cat-systems', this)">Systems</button>
     </div>
 
     <!-- All Notes -->
@@ -179,10 +179,13 @@ title: Notes
         var target = document.getElementById(categoryId);
         if (target) target.style.display = 'block';
 
-        document.querySelectorAll('.tab-btn').forEach(btn => {
+        document.querySelectorAll('.notes-tabs .tab-btn').forEach(btn => {
             btn.classList.remove('active');
+            btn.setAttribute('aria-selected', 'false');
         });
 
         btnElement.classList.add('active');
+        btnElement.setAttribute('aria-selected', 'true');
+        btnElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     }
 </script>
