@@ -103,12 +103,9 @@
         <div class="nav-container">
             <a href="/" class="nav-brand">Swarit Shukla</a>
             <nav class="nav-links">
-                <a href="mailto:ai@swaritshukla.me">email</a>
-                <a href="https://www.linkedin.com/in/swaritshukla/" target="_blank">linkedin</a>
                 <a href="/blog.html">blog</a>
                 <a href="/notes.html">notes</a>
                 <a href="https://github.com/SWARITSHUKLA" target="_blank">github</a>
-                <a href="https://x.com/t0wardsheaven" target="_blank">x</a>
                 <a href="{{ '/Swarit_Shukla_Resume.pdf' | relative_url }}" target="_blank">resume</a>
             </nav>
         </div>
@@ -118,6 +115,19 @@
     <main class="main-content">
         {{ content }}
     </main>
+
+    <!-- Minimal Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <span class="footer-text">© {{ 'now' | date: "%Y" }} Swarit Shukla</span>
+            <div class="footer-links">
+                <a href="mailto:ai@swaritshukla.me">email</a>
+                <a href="https://www.linkedin.com/in/swaritshukla/" target="_blank">linkedin</a>
+                <a href="https://x.com/t0wardsheaven" target="_blank">x</a>
+                <a href="https://github.com/SWARITSHUKLA" target="_blank">github</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

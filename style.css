@@ -12,6 +12,9 @@ body {
     margin: 0;
     padding: 0;
     font-size: 17px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* =========================================
@@ -76,6 +79,8 @@ body {
     max-width: 640px; /* Optimal reading width */
     margin: 0 auto;
     padding: 4rem 1.5rem; /* Generous top/bottom padding */
+    width: 100%;
+    flex: 1;
 }
 
 h1, h2 {
@@ -539,5 +544,65 @@ mjx-container:not([display="true"]) {
     }
     .pdf-btn {
         width: 100%;
+    }
+}
+
+/* =========================================
+   SITE FOOTER
+   ========================================= */
+.site-footer {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(10, 10, 10, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-text {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    color: #857F78;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.footer-links a {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    color: #c4bdb1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #64ffda;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column-reverse;
+        gap: 1.2rem;
+        padding: 2rem 1.5rem 3rem 1.5rem;
+        text-align: center;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem 1.2rem;
     }
 }
