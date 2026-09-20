@@ -189,6 +189,44 @@ p {
     line-height: 1.8;
 }
 
+/* MathJax display equations: allow horizontal scroll when they overflow */
+.post-content mjx-container[jax="SVG"][display="true"] {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    padding: 0.5rem 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+/* Webkit scrollbar styling for MathJax containers */
+.post-content mjx-container[jax="SVG"][display="true"]::-webkit-scrollbar {
+    height: 4px;
+}
+
+.post-content mjx-container[jax="SVG"][display="true"]::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.post-content mjx-container[jax="SVG"][display="true"]::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.post-content mjx-container[jax="SVG"][display="true"]:hover::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* On narrow screens, shrink display math slightly for a better fit */
+@media (max-width: 600px) {
+    .post-content mjx-container[jax="SVG"][display="true"] svg {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 .post-content h1, .post-content h2, .post-content h3 {
     color: #F5F0E1; /* Warm Ivory */
 }
