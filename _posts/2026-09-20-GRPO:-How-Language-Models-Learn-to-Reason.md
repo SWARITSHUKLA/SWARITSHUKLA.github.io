@@ -89,7 +89,7 @@ Represents the probability that the current model assigns to generating $o_i$ gi
 
 The probability ratio is the probability assigned by the new model divided by the probability assigned by the old model new model (The difference between the old and te new models will be cleared in the example at the end).
 
-If the probability ratio $r_i(\theta)$ > 1$, then the model assigns a higher probability to the response $O_i$ by the new model. If $r_i(\theta) < 1$, then the model assigns a lower probability to the response $O_i$ by the new model.
+If the probability ratio $r_i(\theta) > 1$, then the model assigns a higher probability to the response $O_i$ by the new model. If $r_i(\theta) < 1$, then the model assigns a lower probability to the response $O_i$ by the new model.
 
 ### 2 - The Clip function 
 
