@@ -69,6 +69,8 @@ A_i
 \right)
 $$
 
+<small>*If you can't see the full equation you can scroll and see it. </small>
+
 The equation above can be broken down into its sub-pieces to make it more interpretable. 
 
 ### 1 - The Probability Ratio
