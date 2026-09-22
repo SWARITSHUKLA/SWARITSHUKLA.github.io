@@ -72,6 +72,7 @@ $$
 The equation above can be broken down into its sub-pieces to make it more interpretable. 
 
 ### 1 - The Probability Ratio
+
 $$
 r_i(\theta)
 =
