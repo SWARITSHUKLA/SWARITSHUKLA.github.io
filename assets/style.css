@@ -69,7 +69,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #64ffda;
+    color: #F5F0E1;
 }
 
 /* =========================================
@@ -110,7 +110,7 @@ a {
 }
 
 a:hover {
-    color: #64ffda;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -150,14 +150,17 @@ p {
 
 .tech-tag {
     font-family: 'Fira Code', monospace;
-    font-size: 0.7rem;
-    background-color: rgba(100, 255, 218, 0.05);
-    color: #64ffda;
-    padding: 3px 8px;
-    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #e2dcd0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    padding: 3px 10px;
+    border-radius: 9999px;
     margin-left: 10px;
     vertical-align: middle;
-    border: 1px solid rgba(100, 255, 218, 0.1);
+    letter-spacing: 0.01em;
 }
 
 /* =========================================
@@ -172,9 +175,14 @@ p {
 }
 
 .back-link a {
-    color: #64ffda;
+    color: #c4bdb1;
     font-family: 'Fira Code', monospace;
     font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.back-link a:hover {
+    color: #F5F0E1;
 }
 
 .post-date {
@@ -232,8 +240,15 @@ p {
 }
 
 .post-content a {
-    color: #64ffda;
+    color: #F5F0E1;
     text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255, 255, 255, 0.25);
+    transition: text-decoration-color 0.2s ease;
+}
+
+.post-content a:hover {
+    text-decoration-color: #F5F0E1;
 }
 
 /* Make images responsive inside blog posts */
@@ -316,7 +331,7 @@ pre code {
 
 .tab-btn.active {
     color: #F5F0E1; /* Warm Ivory */
-    border-bottom: 2px solid #64ffda;
+    border-bottom: 2px solid #F5F0E1;
 }
 
 /* The notes categories stay on one row and can be swiped on narrow screens. */
@@ -397,8 +412,8 @@ pre code {
 
 /* 2. Custom Text Selection Color */
 ::selection {
-    background: #64ffda;
-    color: #0a0a0a; /* Dark text on green highlight */
+    background: rgba(255, 255, 255, 0.2);
+    color: #F5F0E1;
 }
 
 /* 3. Premium List Hover Effect (Applies to Projects AND Courses) */
@@ -420,7 +435,7 @@ pre code {
     content: ' →';
     font-family: 'Fira Code', monospace;
     font-size: 1rem;
-    color: #64ffda;
+    color: #c4bdb1;
     opacity: 0;
     transition: opacity 0.2s ease, transform 0.2s ease;
     transform: translateX(-5px);
@@ -466,10 +481,10 @@ mjx-container:not([display="true"]) {
     margin-top: 3rem;
     padding: 1.5rem;
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(100, 255, 218, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 14px;
     box-shadow:
-        0 0 20px rgba(100, 255, 218, 0.03),
+        0 4px 20px rgba(0, 0, 0, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -517,9 +532,9 @@ mjx-container:not([display="true"]) {
 .pdf-pill-link {
     font-family: 'Fira Code', monospace;
     font-size: 0.75rem;
-    color: #64ffda;
-    background: rgba(100, 255, 218, 0.08);
-    border: 1px solid rgba(100, 255, 218, 0.2);
+    color: #c4bdb1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 9999px;
     padding: 3px 10px;
     text-decoration: none;
@@ -528,9 +543,9 @@ mjx-container:not([display="true"]) {
 }
 
 .pdf-pill-link:hover {
-    background: rgba(100, 255, 218, 0.18);
-    border-color: #64ffda;
-    color: #64ffda;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #F5F0E1;
     transform: translateY(-1px);
 }
 
@@ -568,15 +583,15 @@ mjx-container:not([display="true"]) {
 }
 
 .pdf-btn.primary {
-    background-color: rgba(100, 255, 218, 0.1);
-    color: #64ffda;
-    border: 1px solid rgba(100, 255, 218, 0.3);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #F5F0E1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .pdf-btn.primary:hover {
-    background-color: #64ffda;
+    background-color: #F5F0E1;
     color: #0a0a0a;
-    box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
 }
 
 .pdf-btn.secondary {
@@ -617,7 +632,7 @@ mjx-container:not([display="true"]) {
 }
 
 .pdf-fallback a {
-    color: #64ffda;
+    color: #F5F0E1;
     text-decoration: underline;
 }
 
@@ -687,7 +702,7 @@ mjx-container:not([display="true"]) {
 }
 
 .footer-links a:hover {
-    color: #64ffda;
+    color: #F5F0E1;
 }
 
 @media (max-width: 600px) {
