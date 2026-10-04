@@ -7,13 +7,11 @@ title: Notes
     <h1>Notes</h1>
     <p class="blog-subtitle">Handwritten notes, mathematical derivations & visual summaries</p>
 
-    <div class="notes-tabs-wrapper">
     <div class="blog-tabs notes-tabs" role="tablist" aria-label="Note categories">
         <button type="button" class="tab-btn active" role="tab" aria-selected="true" aria-controls="cat-dl" onclick="showCategory('cat-dl', this)">Deep Learning</button>
         <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-ml" onclick="showCategory('cat-ml', this)">Machine Learning</button>
         <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-math" onclick="showCategory('cat-math', this)">Mathematics</button>
         <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-systems" onclick="showCategory('cat-systems', this)">Systems</button>
-    </div>
     </div>
 
     <!-- Deep Learning -->
@@ -156,21 +154,4 @@ title: Notes
         btnElement.setAttribute('aria-selected', 'true');
         btnElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     }
-
-    /* Fade hint: show right-edge gradient when tabs overflow and can be scrolled */
-    (function() {
-        var tabs = document.querySelector('.notes-tabs');
-        var wrapper = document.querySelector('.notes-tabs-wrapper');
-        if (!tabs || !wrapper) return;
-
-        function updateFade() {
-            var canScroll = tabs.scrollWidth > tabs.clientWidth;
-            var atEnd = tabs.scrollLeft + tabs.clientWidth >= tabs.scrollWidth - 4;
-            wrapper.classList.toggle('show-fade', canScroll && !atEnd);
-        }
-
-        tabs.addEventListener('scroll', updateFade, { passive: true });
-        window.addEventListener('resize', updateFade);
-        updateFade();
-    })();
 </script>
