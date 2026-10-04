@@ -4,6 +4,7 @@ title: "Convolutional Neural Networks"
 date: 2026-10-11
 category: deep-learning
 pdf: "/assets/notes/Convolutional Neural Networks.pdf"
+pages: 71
 description: "Handwritten notes on CNNs: convolution operations, pooling layers, feature maps, architectures (LeNet, AlexNet, VGG, ResNet), and transfer learning."
 ---
 

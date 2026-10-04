@@ -379,6 +379,10 @@ pre code {
         font-size: 0.85rem;
         padding: 8px 0;
     }
+    .note-header-row {
+        flex-wrap: wrap;
+        gap: 6px 10px;
+    }
 }
 
 /* =========================================
@@ -482,8 +486,32 @@ mjx-container:not([display="true"]) {
 .note-header-row {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     gap: 12px;
+}
+
+.note-header-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.note-page-pill {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    color: #a8a29e;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    padding: 3px 10px;
+    white-space: nowrap;
+    line-height: normal;
+}
+
+.notes-total-stat {
+    color: #F5F0E1;
+    font-weight: 500;
 }
 
 .pdf-pill-link {

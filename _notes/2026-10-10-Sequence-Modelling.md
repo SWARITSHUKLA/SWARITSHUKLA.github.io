@@ -4,6 +4,7 @@ title: "Sequence Modelling: RNNs, GRUs & LSTMs"
 date: 2026-10-10
 category: deep-learning
 pdf: "/assets/notes/Sequence modelling GRUs,RNNs & LSTMs.pdf"
+pages: 64
 description: "Handwritten notes on sequence modelling: recurrent neural networks, vanishing gradients, GRU and LSTM gating mechanisms, and bidirectional architectures."
 ---
 

@@ -4,6 +4,7 @@ title: "Unsupervised Learning"
 date: 2026-10-05
 category: machine-learning
 pdf: "/assets/notes/Unsupervised learning.pdf"
+pages: 38
 description: "Handwritten notes on unsupervised learning: clustering algorithms, dimensionality reduction, anomaly detection, and density estimation."
 ---
 

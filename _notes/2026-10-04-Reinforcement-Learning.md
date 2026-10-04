@@ -4,6 +4,7 @@ title: "Reinforcement Learning"
 date: 2026-10-04
 category: machine-learning
 pdf: "/assets/notes/Reinforcement learning fundamentals.pdf"
+pages: 18
 description: "Handwritten notes on reinforcement learning: Markov decision processes, Q-learning, policy gradients, reward shaping, and exploration vs exploitation."
 ---
 

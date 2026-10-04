@@ -4,6 +4,7 @@ title: "Model Performance Measurements"
 date: 2026-10-12
 category: deep-learning
 pdf: "/assets/notes/Model performance measurements.pdf"
+pages: 21
 description: "Handwritten notes on evaluating deep learning models: loss functions, accuracy metrics, confusion matrices, ROC curves, and regularization techniques."
 ---
 

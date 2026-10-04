@@ -4,6 +4,7 @@ title: "Statistics for Machine Learning"
 date: 2026-10-02
 category: mathematics
 pdf: "/assets/notes/Statistics for machine learning.pdf"
+pages: 68
 description: "Handwritten notes on statistics for ML: descriptive statistics, hypothesis testing, confidence intervals, regression analysis, and maximum likelihood estimation."
 ---
 

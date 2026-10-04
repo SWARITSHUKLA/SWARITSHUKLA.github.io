@@ -4,6 +4,7 @@ title: "Probability for Machine Learning"
 date: 2026-10-03
 category: mathematics
 pdf: "/assets/notes/Probability for machine learning.pdf"
+pages: 74
 description: "Handwritten notes covering probability theory for ML: random variables, Bayes' theorem, distributions, expectation, variance, and probabilistic reasoning."
 ---
 

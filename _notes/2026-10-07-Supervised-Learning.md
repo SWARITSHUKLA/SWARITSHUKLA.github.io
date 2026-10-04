@@ -4,6 +4,7 @@ title: "Supervised Learning"
 date: 2026-10-07
 category: machine-learning
 pdf: "/assets/notes/Supervised learning.pdf"
+pages: 32
 description: "Handwritten notes on supervised learning: regression, classification, decision boundaries, loss functions, and model evaluation."
 ---
 

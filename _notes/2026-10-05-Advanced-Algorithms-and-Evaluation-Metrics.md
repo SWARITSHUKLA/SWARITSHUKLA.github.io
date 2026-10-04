@@ -4,6 +4,7 @@ title: "Advanced Algorithms & Evaluation Metrics"
 date: 2026-10-06
 category: machine-learning
 pdf: "/assets/notes/Advanced Algorithms and Evaluation metrics.pdf"
+pages: 59
 description: "Handwritten notes on advanced ML algorithms and evaluation: ensemble methods, SVMs, tree-based models, ROC curves, and performance metrics."
 ---
 

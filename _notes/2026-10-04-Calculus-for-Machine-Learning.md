@@ -4,6 +4,7 @@ title: "Calculus for Machine Learning"
 date: 2026-10-04
 category: mathematics
 pdf: "/assets/notes/Calculus for machine learning.pdf"
+pages: 47
 description: "Handwritten notes on calculus essentials for ML: derivatives, partial derivatives, gradient descent, chain rule, and multivariate optimization."
 ---
 

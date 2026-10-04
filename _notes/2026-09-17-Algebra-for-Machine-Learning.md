@@ -4,6 +4,7 @@ title: "Algebra for Machine Learning"
 date: 2026-10-05
 category: mathematics
 pdf: "/assets/notes/Linear algebra for ML.pdf"
+pages: 49
 description: "Comprehensive handwritten notes covering linear algebra foundations for machine learning: vectors, matrices, row echelon form, norms, projections, linear regression, and dimensionality reduction."
 ---
 

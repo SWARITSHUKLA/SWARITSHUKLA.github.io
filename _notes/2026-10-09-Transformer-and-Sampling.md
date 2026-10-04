@@ -4,6 +4,7 @@ title: "Transformer & Sampling"
 date: 2026-10-09
 category: deep-learning
 pdf: "/assets/notes/Transformer and Sampling.pdf"
+pages: 15
 description: "Handwritten notes on the Transformer architecture: self-attention, multi-head attention, positional encoding, and sampling strategies for text generation."
 ---
 
