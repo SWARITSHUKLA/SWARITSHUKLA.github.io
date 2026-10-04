@@ -1,7 +1,7 @@
 ---
 layout: note
 title: "DL Fundamentals & Optimization Algorithms"
-date: 2026-10-08
+date: 2026-10-13
 category: deep-learning
 pdf: "/assets/notes/DL fundamentals and optimization algorithms.pdf"
 description: "Handwritten notes on deep learning fundamentals: neural network architectures, activation functions, backpropagation, and optimization algorithms (SGD, Adam, RMSProp)."
