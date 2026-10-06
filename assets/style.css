@@ -163,6 +163,16 @@ p {
     letter-spacing: 0.01em;
 }
 
+.status-marker {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.72rem;
+    color: #857F78; /* Muted warm gray */
+    margin-left: 8px;
+    vertical-align: middle;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
 /* =========================================
    BLOG STYLING
    ========================================= */
