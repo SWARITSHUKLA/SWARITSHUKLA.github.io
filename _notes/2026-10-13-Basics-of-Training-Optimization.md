@@ -5,7 +5,7 @@ date: 2026-10-13
 category: systems
 description: "Training optimization fundamentals — efficient training pipelines, hardware utilization, and performance tuning."
 ---
-> This note is from the Andrej Karpathy lecture on GPT-2 and i would higly recommend watching that, i am writing this because its padagogically the best way to learn, the best way for you to learn from this article is to copy paste the entire thing, give it an LLM and ask for explanation :)
+> This note is from the Andrej Karpathy lecture on GPT-2 and i would higly recommend watching that, i am writing this because its padagogically the best way for me to learn, the best way for you to learn from this article is to copy paste the entire thing, give it an LLM and ask for explanation :)
 
 ## Quantization 
 
@@ -30,7 +30,7 @@ description: "Training optimization fundamentals — efficient training pipeline
 
 Here is what we can infer from the table above that shows the performance given the quantization of the tensors,
 
-- When you decrease the precision of the tensor cores the models performance improves a lot for example going from $FP32$ to $BF16$ we get a performance improvement.
+When you decrease the precision of the tensor cores the models performance improves a lot for example going from $FP32$ to $BF16$ we get a performance improvement.
 
 The peak BF16 Tensor Core performance is:
 
@@ -86,5 +86,3 @@ To counter this specific problem we use Kernel fusion where we add multiple kern
 The best example of this is Flash attention.
 Where we fuse the whole attention mechanism calculations into one kernel function and it reduces the latency.
 
-## Nice numbers
-The numbers which are in the power of 2 are considerd nice numbers
