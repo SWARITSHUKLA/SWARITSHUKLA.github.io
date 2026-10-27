@@ -8,6 +8,8 @@ pages: 3
 description: "Notes on LLM pre-training pipelines, multi-GPU distributed training with DDP vs. FSDP, Chinchilla scaling laws, and pre-training for domain adaptation."
 ---
 
+> **Disclaimer**: These notes are intended solely for personal study and reference; they are not detailed or exhaustive, and are not for any monetary or commercial use. Any images or conceptual diagrams referenced belong to DeepLearning.AI.
+
 These notes cover core concepts in training large language models:
 
 - **Multi-GPU Distributed Training**: When models fit on a single GPU vs. when parameters exceed single-GPU memory.
