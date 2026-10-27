@@ -4,7 +4,7 @@ title: "LLM Pre-training and Scaling Laws"
 date: 2026-10-27
 category: gen-ai
 pdf: "/assets/notes/LLM pre-training and scaling laws.pdf"
-pages: 3
+pages: 4
 description: "Notes on LLM pre-training pipelines, multi-GPU distributed training with DDP vs. FSDP, Chinchilla scaling laws, and pre-training for domain adaptation."
 ---
 
