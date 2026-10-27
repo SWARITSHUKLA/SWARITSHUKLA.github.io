@@ -9,6 +9,7 @@ title: Notes
 
     <div class="blog-tabs notes-tabs" role="tablist" aria-label="Note categories">
         <button type="button" class="tab-btn active" role="tab" aria-selected="true" aria-controls="cat-dl" onclick="showCategory('cat-dl', this)">Deep Learning</button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-genai" onclick="showCategory('cat-genai', this)">Gen AI</button>
         <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-ml" onclick="showCategory('cat-ml', this)">Machine Learning</button>
         <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-math" onclick="showCategory('cat-math', this)">Mathematics</button>
         <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="cat-systems" onclick="showCategory('cat-systems', this)">Systems</button>
@@ -45,6 +46,40 @@ title: Notes
         </ul>
         {% else %}
         <p class="empty-category-msg">No deep learning notes uploaded yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Gen AI -->
+    <div id="cat-genai" class="category-block" style="display: none;">
+        {% assign genai_notes = site.notes | where: "category", "gen-ai" | sort: 'date' | reverse %}
+        {% assign genai_pages = 0 %}
+        {% for n in genai_notes %}
+          {% if n.pages %}
+            {% assign genai_pages = genai_pages | plus: n.pages %}
+          {% endif %}
+        {% endfor %}
+        <p class="category-desc">Pre-training, scaling laws, architectures, fine-tuning, and alignment{% if genai_pages > 0 %} · {{ genai_pages }} pages total{% endif %}</p>
+        {% if genai_notes.size > 0 %}
+        <ul class="item-list">
+            {% for note in genai_notes %}
+            <li>
+                <div class="note-header-row">
+                    <a href="{{ note.url | relative_url }}" class="item-title">{{ note.title }}</a>
+                    {% if note.pages %}
+                    <span class="note-page-pill">{{ note.pages }} pages</span>
+                    {% endif %}
+                </div>
+                <p class="post-date-inline">{{ note.date | date: "%B %-d, %Y" }}</p>
+                {% if note.description %}
+                <p>{{ note.description }}</p>
+                {% elsif note.excerpt %}
+                <p>{{ note.excerpt | strip_html | truncatewords: 22 }}</p>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-category-msg">No Gen AI notes uploaded yet.</p>
         {% endif %}
     </div>
 
